@@ -17,9 +17,15 @@ public class Agent {
 		return data;
 	}
 
+	public void setData(Data data) {
+		this.data = data;
+	}
+
 	public void setUuid(Data data) {
 		this.data = data;
 	}
+
+
 
 	@Override
 	public String toString() {

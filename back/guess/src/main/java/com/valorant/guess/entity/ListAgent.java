@@ -22,5 +22,14 @@ public class ListAgent {
     public void setData(List<Data> data) {
         this.data = data;
     }
+
+    public Agent getRandomAgent() {
+        int random = (int) (Math.random() * data.size());
+        Data data = this.data.get(random);
+        Agent agent = new Agent();
+        agent.setStatus(this.status);
+        agent.setData(data);
+        return agent;
+    }
     
 }

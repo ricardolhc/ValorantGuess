@@ -1,0 +1,7 @@
+.marginLeft button {
+    margin-left: 30px;
+}
+
+.marginLeft button:first-child {
+    margin-left: 0;
+}

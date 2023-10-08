@@ -14,7 +14,7 @@
 	<name>guess</name>
 	<description>Projeto web para valorant guess</description>
 	<properties>
-		<java.version>20</java.version>
+		<java.version>21</java.version>
 	</properties>
 	<dependencies>
 		<dependency>
