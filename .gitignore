@@ -1,0 +1,3 @@
+# Artefatos locais de builds Java anteriores à migração para React.
+/back/**/target/
+/.superpowers/
