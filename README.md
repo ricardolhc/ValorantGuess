@@ -45,3 +45,24 @@ npm test
 npm run lint
 npm run build
 ```
+
+## Publicar no GitHub Pages
+
+O workflow `.github/workflows/deploy-pages.yml` instala as dependências, executa
+lint e testes, gera o build e publica a pasta `front/valorantguess/dist`.
+Ele roda a cada push na `main` e também pode ser iniciado pela aba **Actions**
+com **Run workflow** depois que o arquivo estiver na branch padrão.
+
+Para ativar a primeira publicação:
+
+1. No repositório, abra **Settings → Pages**.
+2. Em **Build and deployment → Source**, selecione **GitHub Actions**.
+3. Envie estas alterações para a `main` (por merge do PR ou push).
+4. Acompanhe **Actions → Deploy to GitHub Pages** até concluir.
+
+Endereço esperado: https://ricardolhc.github.io/ValorantGuess/
+
+O `base` do Vite está definido como `/ValorantGuess/` para carregar JavaScript,
+CSS e favicon no caminho do repositório. Se o repositório for renomeado ou passar
+a usar domínio próprio, ajuste `base` em `front/valorantguess/vite.config.ts`.
+Não é necessário criar uma branch `gh-pages` nem configurar token pessoal.
