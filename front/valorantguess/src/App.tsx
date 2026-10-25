@@ -51,7 +51,7 @@ function App() {
           </div>
         )}
         <p className="feedback" role="status" aria-live="polite">
-          {state.phase === 'countdown' ? `Começando em ${state.countdown}…` : state.feedback}
+          {state.feedback}
         </p>
         <footer className="site-footer">
           <span>FEITO PARA QUEM CONHECE CADA DETALHE.</span>
